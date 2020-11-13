@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Images/Favicon.png">
+    <link rel="stylesheet" href="CustomOrderpage.css">
+    <title>Order Pickup/Delevery</title>
+ 
+  </head>
+  <body style="font-family: 'Bebas Neue', cursive;">
+	  <body style="font-family: 'Bebas Neue', cursive;">
+	  <div class="navbar" style="font-family: 'Paytone One', sans-serif;text-align:center;font-size:27px;">
+        <a href="About.html" style="text-decoration:none;color:White;"><span style="margin:0px 0px;height:36px;cursor:pointer;border-radius:20px;">About Us</span></a>
+        <a href="Shop.html" style="text-decoration:none;color:White;"><span class="active" style="margin:0px 0px;height:36px;">Our Shop</span></a>
+		<a href="contactus.html" style="text-decoration:none;color:White;"><span style="margin:0px 0px;height:36px;cursor:pointer;border-radius:20px;">Contact Us</span></a>
+        <img src="F:\Atominterschool\Images\logo.png"  height="50px"style="margin: 5px 10px; float:right;margin-right:30px;">
+        <a href="#" style="text-decoration:none;color:White;"><img src="Images/twitter.png" height="20px" style="margin:5px 10px; float:left; margin-left:30px; vertical-align:baseline; font-size:35px;margin-top:15px;"></a>
+		<a href="#" style="text-decoration:none;color:White;"><img src="Images/snapchat.png" height="20px" style="margin:5px 10px; float:left; margin-left:30px; vertical-align:middle;font-size:35px;margin-top:15px;"></a>
+	    <a href="#" style="text-decoration:none;color:White;"><img src="Images/instagram.png" height="20px" style="margin:5px 10px; float:left; margin-left:30px; vertical-align:middle;font-size:35px;margin-top:15px;"></a>
+	   </div>
+       <div style="padding:30px;padding-top:250px;padding-bottom:150px;" class="back1">
+	    <img src="F:\Atominterschool\Images\logo.png"  height="170px"style="margin: 30px 50px; float:right;">
+	    <h1 style="font-family: 'Paytone One', sans-serif;font-size:100px;"><b>FuLucious</b></h1>
+	   </div>
+	   
+	   <div class="container">
+        <form>
+		<div style="text-align:center;">
+		<h1>Please fill out The details</h1>
+		</div>
+		<div class="row" style="margin-left:25%;">
+         <div class="column" style="width:30%;">
+		
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required="flag"><br>
+		  
+		  <label for="Address">Address</label><br>
+          <textarea id="address" name="Address" placeholder="Write your Address, If you want to pickup write pickup..." style="height:200px" required="flag"></textarea>
+         
+		 </div>
+         	 
+		 <div class="column" style="width:50%;">
+		 
+		 <label for="lname">Last Name</label><br>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="flag"><br>
+		 
+		 <label for="PHnum">Phone Number</label><br>
+         <input type="text" id="phnum" name="Phnum" placeholder="Your Phone number.." required="flag" max="9999999999" min="6999999999"><br>
+		 <label>Payment Option:</label><br>
+		 <input type="radio" name="paymentoption" id="Net Banking" value="NetBanking">NetBanking<br> 
+         <input type="radio" name="paymentoption" id="Cash" value="Cash">Cash<br> 
+         <input type="radio" name="paymentoption" id="Card" value="Card">Card<br><br>
+		 
+		 <p>This also works and gives you a invoice reciept</p>
+		 <a href="Orderpage.html" onclick="Senddata()" style="color:White;text-decoration:none;">
+		 <input type="button" type="submit" class="button" value="Submit" style="text-decoration:none;" onclick="Senddata()">
+		 </a>
+		 </div>
+		</div>
+  </form>
+</div>
+<br><hr>
+      <div class="botrow" style="font-family: 'Quicksand', sans-serif; text-align:center; background-color:black; margin-left:15%;">
+        <div class="botcolumn">
+          <h4>Follow us:</h4>
+          <a href="#">Facebook</a></br>
+          <a href="#">Youtube</a></br>
+          <a href="#">Twitter</a></br>
+          <a href="#">Instagram</a></br>
+          <a href="#">Reddit</a></br>
+        </div>
+        <div class="botcolumn">
+          <h4>Download our <a href="#">APP</a></h4>
+        </div>
+        <div class="botcolumn">
+          <h4>Other pages</a href="#"></h4>
+          <a href="contactus.html">Visit Us(These work)</a><br>
+          <a href="About.html">About Our Bakery</a><br>
+		  <a href="Shop.html">Want a Delievery</a><br>
+          <a href="Customorder.html">Have a custom Order?</a>
+		  <a onclick="picup()">Want to pickup</a>
+        </div>
+        <div class="botcolumn">
+          <h4>FAQS</h4>
+          <a href="privacy.html">Privacy Policy</a></br>
+          <a href="#">Cookies Policy</a></br>
+          <a href="#">FAQS</a></br>
+        </div>
+        <div class="botcolumn">
+          <h4>Instant Contact</a href="#"></h4>
+          Gmail<br>
+          XXXXX@gmail.com<br>
+          +91|9XX-9XX(India)<br>
+          +1 |0-XX9XX0
+        </div>
+      </div>
+	  
+<script>
+function Senddata(){
+  var fname = document.getElementById("fname").value
+  var lname = document.getElementById("lname").value
+  var name = fname + ' ' + lname 
+  var address = document.getElementById("address").value
+  var phnum = document.getElementById("phnum").value
+  sessionStorage.setItem('name', name)
+  sessionStorage.setItem('phnum',String(phnum))
+  sessionStorage.setItem('address', address)
+  var payop = document.querySelector('input[name="paymentoption"]:checked'); 
+  if(payop != null) { 
+                sessionStorage.setItem('payop', payop.value)
+            } 
+            else { 
+                dsessionStorage.setItem('payop', "Cash") 
+            } 
+}     
+
+
+
+
+</script>
+
+  </body>
+</html>

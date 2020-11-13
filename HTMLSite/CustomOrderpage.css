@@ -1,0 +1,141 @@
+
+  body {
+   -webkit-animation-delay: 0.1s;
+   -webkit-animation-name: fontfix;
+   -webkit-animation-duration: 0.1s;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes fontfix {
+   from { opacity: 1; }
+   to   { opacity: 1; }
+  }
+  .back{
+   background-image: url('Images/back.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   height:200px;
+  }
+  .back1{
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color:#C4FFCD;
+   height:70px;
+  }
+  .container {
+   padding: 2px 5px;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #1500A0;
+    overflow: auto;
+    position:fixed;
+    padding:2px;
+  }
+ 
+  .navbar span {
+    padding: 35px;
+    color: white;
+    padding-top:100px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+    .navbar span:hover {
+    background-color: #008679;
+  }
+  .active {
+    background-color: #0098BE;
+    border-radius:100px;
+  }
+  .botcolumn {
+    float: left;
+    width: 15%;
+    padding: 2px;
+    height: 200px;
+    font-size: 14px;
+    color: rgb(69, 69, 69);
+  }
+  .botcolumn a{
+    text-decoration: none;
+    color: rgb(106, 106, 106);
+  }
+  .botcolumn h4{
+    font-size: 20px;
+  }
+  .botrow {
+  }
+  .botrow:after {
+    content: "";
+    display: table;
+  }
+  input[type=text], [type=number], select, textarea {
+   width: 300px;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+  }
+
+  .button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+  }
+
+  .button:hover {
+   background-color: #45a049;
+  }
+  
+  .button1 {
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   transition: opacity 0.3s ease-in-out;
+   cursor: pointer;
+  }
+
+  .button1:hover {
+    box-shadow: 0 0 3px #000000;
+  }
+  .container {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+  }  
+  .column {
+   float: left;
+   width: 48.4%;
+   padding: 10px;
+  }
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+  .slidescon {
+   max-width: 1000px;
+   margin: auto;
+  }
+  .mapouter{
+   text-align:right;
+   height:450px; 
+   width:450px;
+  }
+  .gmap_canvas {
+   overflow:hidden;
+   background:none!important;
+   height:500px;
+   width:450px;
+  }
+	   
+

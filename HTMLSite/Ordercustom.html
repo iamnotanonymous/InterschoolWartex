@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Images/Favicon.png">
+    <title>Order Invoice</title>
+	<style>
+	body{
+	 }
+  .column {
+   float: left;
+   padding: 10px;
+  }
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+  .row{
+  background-color:#EFEFEF;
+  }
+  .button {
+   background-color: #AFAD21;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+  }
+
+  .button:hover {
+   background-color: #BFB723;
+  }
+  .table {
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+  }
+  .table td, table th {
+   border: 1px solid #ddd;
+   padding: 8px;
+  }
+  .table tr:hover {background-color: #ddd;}
+  .table th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #4CAF50;
+   color: white;
+  }
+	</style>
+</head>
+<body style="margin-left:25%;margin-right:25%;">
+   <div style="padding:10px;background-color:#C8F5BD;">
+   <hr><br>
+   <img src="F:\Atominterschool\Images\logo.png" height="60px" style="margin: 30px 50px; float:right;vertical-align:middle;"><br>
+   <h1>Invoice reciept</h1><br>
+   <hr>
+   </div>
+   <div class="row" style="">
+   <br>
+   <div class="column" style="width:45%;">
+   <h3 style="color:#000040;">Address Given:<span style="color:red;">*</span></h2><p id="P3"></p>
+   <h3 style="color:#000040;font-size:medium;">Payment Option:<span style="color:red;">*</span></h2><p id="P8"></p>
+   </div>
+   <div class="column" style="width:47%;border-left:solid 1px black;text-align:right;margin-bottom:10px">
+   <h3 style="color:#000040;">Phone Number:<span style="color:red;">*</span></h2><p id="P4"></p>
+   <h3 style="color:#000040;">Name:<span style="color:red;">*</span></h2><p id="P2"></p>
+   </div>
+   
+   </div>
+   <br>
+   <table class="table">
+   <tr>
+    <th>You have decribed your custom cake like:</th>
+    <td><span id="P6" style="font-size:16px;"></span></td>
+   </tr>
+   <tr>
+    <th>Total</th>
+    <td><span id="P1" style="font-size:12px;"></span></td>
+   </tr>
+   </table>
+   <p style="text-align:center;font-size:12px;color:#004000;">Invoice-Number(Does not matter):<span id="P5"></span></p>
+   <div style="font-size:10px;text-align:center;">
+   <span style="color:red;">*</span>Address, Phone number, Name are not stored anywhere on any server and we will not be responsible for any data leak. There are no cookies made in this process(if any) will be deleted after the checkout. For more details visit <br><a href="privacy.html">Privacy Policy</a>
+   <br>
+   </div>
+   <hr style="">
+   <button onclick="window.print()" style="" class="button">Print this page</button>
+<script>
+document.getElementById("P1").innerHTML = "$50";
+document.getElementById("P2").innerHTML = sessionStorage.getItem('name');
+document.getElementById("P3").innerHTML = sessionStorage.getItem('address');
+document.getElementById("P4").innerHTML = sessionStorage.getItem('phnum');
+document.getElementById("P6").innerHTML = sessionStorage.getItem('des');
+document.getElementById("P7").innerHTML = sessionStorage.getItem('payop');
+document.getElementById("P5").innerHTML =  (Math.floor(Math.random() * 1000000000000));
+</script>
+</body>
+</html>

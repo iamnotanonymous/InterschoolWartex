@@ -1,0 +1,345 @@
+  /*From Google Fonts:*/
+   @import url(https://fonts.googleapis.com/css2?family=Itim&display=swap" )
+  /*font-family: 'Itim', cursive;*/
+   @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap)
+  /*font-family: 'Bebas Neue', cursive;*/
+   @import url(https://fonts.googleapis.com/css2?family=Paytone+One&display=swap) 
+  /*font-family: 'Paytone One', sans-serif;*/
+
+
+  /* Theme:
+  #00a388(Dark Green Cyan),
+  #79bd8f(Lighter Green Cyan),
+  #beeb9f(Cyan with Tiny Green),
+  #ffff9d(Yellowish). #ff6138(Red),
+  #000000(Black),
+  #ffffff(White)
+  */
+  * {
+    box-sizing: border-box;
+    color: #777;
+  }
+  
+.back{
+  background-image: url('Images/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:200px;
+ }
+  body {
+    font-family: 'Bebas Neue', cursive;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card-spec {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:#FFF012;
+    width: 80%;
+  }
+  .card-spec:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+    .card-new {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:#4AFF2E;
+    width: 80%;
+  }
+  .card-new:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 5px;
+  }
+
+  
+.navbar {
+    width: 100%;
+    background-color: #1500A0;
+    overflow: auto;
+    position:fixed;
+    padding:2px;
+  }
+ 
+  .navbar span {
+    padding: 35px;
+    color: white;
+    padding-top:1000px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+    .navbar span:hover {
+    background-color: #008679;
+  }
+    .active {
+    background-color: #0098BE;
+    border-radius:100px;
+  }
+  
+  .midcolumn {
+    float: left;
+    width: 22%;
+    padding: 1px;
+    height: 200px;
+    font-size: 14px;
+    color: rgb(69, 69, 69);
+  }
+
+  .midrow:after {
+    content: "";
+    display: table;
+  clear: both;
+  }
+  .botcolumn {
+    float: left;
+    width: 15%;
+    padding: 2px;
+    height: 200px;
+    font-size: 14px;
+    color: rgb(69, 69, 69);
+  }
+  .botcolumn a{
+    text-decoration: none;
+    color: rgb(106, 106, 106);
+  }
+  .botcolumn h4{
+    font-size: 20px;
+  }
+  .botrow {
+  }
+  .botrow:after {
+    content: "";
+    display: table;
+  }
+  
+  .sidenav {
+    width: 100%;
+    z-index: 1;
+    top: 70px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+  .sidenav a{
+    text-decoration:none;
+  }
+  
+  
+  .descrip {
+    margin: 1em;
+  }
+  .section-header {
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+  }
+  .btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+  }
+  .btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+  }
+  .btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+  }
+  .btn-primary:hover {
+    background-color: #2D9CDB;
+  }
+
+  .shop-item {
+    margin: 30px;
+  }
+  .shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  .shop-item-image {
+    height: 250px;
+  }
+  .shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .shop-item-price {
+    flex-grow: 1;
+    color: #333;
+  }
+  .shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+  }
+  .cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .cart-row {
+    display: flex;
+  }
+  .cart-item {
+    width: 45%;
+  }
+  .cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+  }
+  .cart-quantity {
+    width: 35%;
+  }
+  .cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+  }
+  .cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+  }
+  .btn-danger:hover {
+    background-color: #CC4C4C;
+  }
+  .cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+  }
+  .cart-row:last-child {
+    border-bottom: 1px solid black;
+  }
+  .cart-row:last-child .cart-column {
+    border: none;
+  }
+  .cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+  }
+  .cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+  }
+  .btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    float:right;
+    text-align:center;
+    font-size: 1em;
+  }
+  .btn-purchase a {
+   color:White;
+  }
+.sidenavin {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding:10px;
+  background-color: #eee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenavin a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenavin a:hover {
+  color: #000000;
+}
+
+.sidenavin .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  font-size: 128px;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
